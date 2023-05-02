@@ -53,13 +53,18 @@ router.delete('/:id', (req, res) => {
     force: true,
 
   })
-    .then((category) => {
-      res.status(200).json(category);
+    .then((cat) => {
+      if
+        (!cat) {
+          res.status(404).json({ message: 'No product found with this id!' });
+          return;
+        }
+            res.json(cat);
     })  
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
-    });
+    })
 
 });
 

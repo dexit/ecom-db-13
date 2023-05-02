@@ -86,13 +86,17 @@ router.delete('/:id', (req, res) => {
 
   })
     .then((tag) => {
-      res.status(200).json(tag);
+      if
+        (!tag) {
+          res.status(404).json({ message: 'No tag found with this id!' });
+          return;
+        }
+            res.json(tag);
     })  
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
-    });
-
+    })
   
 });
 
