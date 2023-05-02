@@ -27,7 +27,7 @@ router.get('/:id', (req, res) => {
     },
     include: [{ model: Product }],
   })
- .then((category) => res.json(category))
+ .then((cat) => res.json(cat))
  .catch((err) => {
    console.log(err);
    res.status(500).json(err);
@@ -37,10 +37,30 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new category
+  Category.create(req.body)
+    .then((cat) => res.json(cat))
+    .catch((err) => {
+      
+      console.log(err);
+      res.status(500).json(err);
+    })
 });
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
+  Category.update(req.body, {
+    where: {
+      id: req.params.id,
+    },
+    force: true,
+     })
+   .then((cat) => {
+     if (!cat) {
+       res.status(404).json({ message: 'No category found with this id!' });
+       return;
+     }
+     res.json(cat);
+  })
 });
 
 router.delete('/:id', (req, res) => {
