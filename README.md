@@ -74,17 +74,9 @@ Then proceed to follow the [Api Routes](#api-routes) section information for API
  ``` /api/tags/:id ``` - DELETE - delete a single Tag by ```id```
 
 ## Walkthrough
-ToDo: Add walkthrough video link here
 
-## Screenshots
-ToDo: Add screenshots
+https://user-images.githubusercontent.com/6205151/236352749-2f101575-2238-41eb-965a-5482b168acc3.mp4
 
-
-## Tests
-ToDo: Add tests
-
-Please run the tests by:
-``` npm test ```
 
 ## Licence
   [![License: GPL](https://img.shields.io/badge/License-GPL-green.svg)](https://opensource.org/licenses/GPL)
