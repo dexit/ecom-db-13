@@ -1,4 +1,6 @@
 # Ecommerce Database 13
+![image](https://user-images.githubusercontent.com/6205151/236349740-5517a2fc-b93e-4b97-bddf-cc844347e630.png)
+
   [![License: GPL](https://img.shields.io/badge/License-GPL-green.svg)](https://opensource.org/licenses/GPL)
 
 ## Description
