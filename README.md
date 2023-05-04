@@ -13,8 +13,6 @@ Express.Js API back end for fictional e-commerce website that uses a MySql datab
   - [Usage](#usage)
   - [API Routes](#api-routes)
   - [Walkthrough](#walkthrough)
-  - [Screenshots](#screenshots)
-  - [Tests](#tests)
   - [Licence](#licence)
   - [Questions](#questions)
 
